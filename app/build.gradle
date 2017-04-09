@@ -5,7 +5,7 @@ buildscript {
         maven { url 'https://maven.fabric.io/public' }
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.1.0'
+        classpath 'com.android.tools.build:gradle:2.3.1'
         classpath 'com.neenbedankt.gradle.plugins:android-apt:1.4'
         classpath 'io.fabric.tools:gradle:1.20.1'
     }
@@ -36,12 +36,14 @@ def getDate() {
 }
 
 android {
-    compileSdkVersion 23
+    compileSdkVersion 25
     buildToolsVersion rootProject.ext.buildToolsVersion
 
     defaultConfig {
         minSdkVersion rootProject.ext.minSdk
         targetSdkVersion rootProject.ext.targetSdk
+        multiDexEnabled true
+
 
         vectorDrawables.useSupportLibrary = true
 
@@ -85,6 +87,9 @@ android {
 }
 
 dependencies {
+
+    compile 'com.android.support:multidex:1.0.1'
+
     def libs = rootProject.ext.libraries
 
     compile libs.supportAppCompat

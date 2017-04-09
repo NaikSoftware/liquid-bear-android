@@ -7,11 +7,11 @@ allprojects {
 
 ext {
     minSdk = 15
-    targetSdk = 23
-    compileSdk = 23
-    buildToolsVersion = '24.0.1'
+    targetSdk = 25
+    compileSdk = 25
+    buildToolsVersion = '25.0.2'
 
-    supportLibraryVersion = '23.2.1'
+    supportLibraryVersion = '25.3.1'
     retrofitVersion = '1.9.0'
     butterKnifeVersion = '7.0.0'
     timberVersion = '2.7.1'

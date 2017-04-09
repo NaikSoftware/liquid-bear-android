@@ -3,6 +3,8 @@ package com.pillowapps.liqear;
 import android.app.Application;
 import android.content.Context;
 import android.support.annotation.NonNull;
+import android.support.multidex.MultiDex;
+import android.support.multidex.MultiDexApplication;
 
 import com.crashlytics.android.Crashlytics;
 import com.pillowapps.liqear.audio.MusicServiceModule;
@@ -23,7 +25,7 @@ import butterknife.ButterKnife;
 import io.fabric.sdk.android.Fabric;
 import timber.log.Timber;
 
-public class LBApplication extends Application {
+public class LBApplication extends MultiDexApplication {
     public static final Bus BUS = new Bus(ThreadEnforcer.ANY);
 
     @SuppressWarnings("NullableProblems")
@@ -47,6 +49,12 @@ public class LBApplication extends Application {
         } else {
             Fabric.with(this, new Crashlytics());
         }
+    }
+
+    @Override
+    protected void attachBaseContext(Context base) {
+        super.attachBaseContext(base);
+        MultiDex.install(this);
     }
 
     @NonNull
