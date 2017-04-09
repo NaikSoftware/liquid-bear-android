@@ -59,6 +59,7 @@ import java.util.TreeMap;
 
 /**
  * Entry point into the API.
+ * // TODO: 09.04.17 Rewrite to Apache HttpClient to Retrofit 
  */
 @SuppressWarnings({"UnusedDeclaration", "unchecked"})
 public class QueryManager {

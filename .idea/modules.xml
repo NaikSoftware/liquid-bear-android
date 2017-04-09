@@ -5,7 +5,6 @@
       <module fileurl="file://$PROJECT_DIR$/libraries/AndroidBillingLibrary/AndroidBillingLibrary.iml" filepath="$PROJECT_DIR$/libraries/AndroidBillingLibrary/AndroidBillingLibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/libraries/AppRater/AppRater.iml" filepath="$PROJECT_DIR$/libraries/AppRater/AppRater.iml" />
       <module fileurl="file://$PROJECT_DIR$/libraries/DragSortListLibrary/DragSortListLibrary.iml" filepath="$PROJECT_DIR$/libraries/DragSortListLibrary/DragSortListLibrary.iml" />
-      <module fileurl="file://$PROJECT_DIR$/LiquidBearAndroid.iml" filepath="$PROJECT_DIR$/LiquidBearAndroid.iml" />
       <module fileurl="file://$PROJECT_DIR$/LiquidBear_Android/LiquidBear_Android.iml" filepath="$PROJECT_DIR$/LiquidBear_Android/LiquidBear_Android.iml" />
       <module fileurl="file://$PROJECT_DIR$/libraries/NumberPicker/NumberPicker.iml" filepath="$PROJECT_DIR$/libraries/NumberPicker/NumberPicker.iml" />
       <module fileurl="file://$PROJECT_DIR$/libraries/PanningViewLibrary/PanningViewLibrary.iml" filepath="$PROJECT_DIR$/libraries/PanningViewLibrary/PanningViewLibrary.iml" />
@@ -15,7 +14,8 @@
       <module fileurl="file://$PROJECT_DIR$/libraries/StickyGridHeaders/StickyGridHeaders.iml" filepath="$PROJECT_DIR$/libraries/StickyGridHeaders/StickyGridHeaders.iml" />
       <module fileurl="file://$PROJECT_DIR$/libraries/ViewPagerIndicatorLibrary/ViewPagerIndicatorLibrary.iml" filepath="$PROJECT_DIR$/libraries/ViewPagerIndicatorLibrary/ViewPagerIndicatorLibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/libraries/actionbarsherlock/actionbarsherlock.iml" filepath="$PROJECT_DIR$/libraries/actionbarsherlock/actionbarsherlock.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libraries/libraries.iml" filepath="$PROJECT_DIR$/libraries/libraries.iml" />
+      <module fileurl="file://$PROJECT_DIR$/liquid-bear-android.iml" filepath="$PROJECT_DIR$/liquid-bear-android.iml" />
     </modules>
   </component>
 </project>
-

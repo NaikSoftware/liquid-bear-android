@@ -1,9 +1,10 @@
 buildscript {
     repositories {
         mavenCentral()
+        jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.2.0'
+        classpath 'com.android.tools.build:gradle:2.3.1'
     }
 }
 apply plugin: 'com.android.application'
@@ -45,6 +46,7 @@ android {
 dependencies {
     compile 'com.actionbarsherlock:actionbarsherlock:4.4.0@aar'
     compile 'de.cketti.library.changelog:ckchangelog:1.2.0'
+    compile 'org.apache.httpcomponents:httpclient:4.5.3'
     compile project(':libraries:SlidingMenu')
     compile project(':libraries:PullToRefreshLibrary')
     compile project(':libraries:DragSortListLibrary')
