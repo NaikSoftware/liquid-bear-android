@@ -23,6 +23,7 @@ public class VkApiModule {
 
     public static final String VK_API_KEY = "03q8HwJ2xIgJlzxLgxv0";
     public static final String VK_APP_ID = "4613451";
+    public static final String VK_USER_AGENT = "VKAndroidApp (Android 6.0; SDK 23; x86)";
 
     public static final String VK = "vk";
 
@@ -59,6 +60,7 @@ public class VkApiModule {
         return request -> {
             request.addQueryParam("access_token", authorizationInfoManager.getVkAccessToken());
             request.addQueryParam("v", "5.53");
+            request.addHeader("User-Agent", VK_USER_AGENT);
         };
     }
 
