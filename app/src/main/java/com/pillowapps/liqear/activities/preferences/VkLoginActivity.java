@@ -60,6 +60,10 @@ public class VkLoginActivity extends TrackedToolbarBaseActivity {
 
         String url = String.format(OAUTH_REQUEST_FORMAT, VkApiModule.VK_APP_ID,
                 ALL_PERMISSION, OAUT_BLANK_URL, DISPLAY, RESPONSE);
+
+        // https://oauth.vk.com/authorize?client_id=2685278&scope=friends,photos,audio,status,wall,groups,offline&redirect_uri=http://api.vkontakte.ru/blank.html&display=touch&response_type=token
+        // https://oauth.vk.com/token?grant_type=password&client_id=2685278&client_secret=lxhD8OD7dMsqtXIm5IUY&username=my_mail&password=my_pass&v=5.63&scope=friends,photos,audio,status,wall,groups,offline
+
         webview.loadUrl(url);
     }
 
