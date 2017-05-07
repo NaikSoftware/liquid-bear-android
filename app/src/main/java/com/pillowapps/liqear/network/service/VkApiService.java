@@ -112,12 +112,8 @@ public interface VkApiService {
                      @Query("index") int index,
                      VkCallback<VkTrackUrlResponseRoot> callback);
 
-    @GET("/execute.getUrlById")
-    void getTrackUrlById(@Query("notation") String trackNotation,
-                         @Query("index") long index,
-                         @Query("audioId") long audioId,
-                         @Query("ownerId") long ownerId,
-                         VkCallback<VkTrackUrlResponseRoot> callback);
+    @GET("/audio.getById")
+    void getAudioById(@Query("audios") String ids, Callback<VkTrackUrlResponseRoot> callback);
 
     @GET("/execute.getLyrics")
     void getLyrics(@Query("notation") String trackNotation,
